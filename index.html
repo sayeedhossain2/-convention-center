@@ -5,8 +5,396 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>convention center</title>
+    <!-- bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/57dbc98db6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css link? -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>convention-center</h1>
+    <!-- header start here -->
+    <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fw-bold p-3">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3" href="#">Sayeed Convention Hall </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Subscribe</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="false"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="images/images/banner.png"
+                class="d-block w-100 fh"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="display-3 fw-bold">
+                  The perfect venue for your next event
+                </h5>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit
+                </p>
+                <button class="btn bg-light text-primary fw-bold">
+                  Book Now
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/images/people.png"
+                class="d-block w-100 fh"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>The perfect venue for your next event</h5>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/images/wedding.png"
+                class="d-block w-100 fh"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="">The perfect venue for your next event</h5>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="row my-5 align-items-center">
+            <div class="col-lg-6">
+              <img class="img-fluid" src="images/images/wedding.png" alt="" />
+            </div>
+            <div class="col-lg-6">
+              <h1>Every moment is Precious</h1>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <!-- toast start -->
+              <div
+                class="toast align-items-center"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="d-flex">
+                  <div class="toast-body">
+                    Hello, world! This is a toast message.
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-close me-2 m-auto"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+              </div>
+              <!-- toast end -->
+
+              <button class="btn btn-primary">
+                Explore Our Album <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h1 class="text-center py-5">Our Package</h1>
+          <div class="row my-5">
+            <div class="col-lg-3 mt-5">
+              <h1>$300</h1>
+              <h2>Business fair</h2>
+              <p>For most businesses event like book fair, craft fair.</p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i>
+                limited space access
+              </p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i
+                >Secuirty facility
+              </p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i>event
+                support
+              </p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i
+                >Decoration design
+              </p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i>Per
+                day bill
+              </p>
+              <button class="btn fw-bold text-primary ms-4">choose plan</button>
+            </div>
+
+            <div class="col-lg-3 my-5">
+              <h1>$500</h1>
+              <h2>Wedding Base</h2>
+              <p>For most businesses event like book fair, craft fair.</p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i
+                >limited space access
+              </p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i
+                >Secuirty facility
+              </p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i>event
+                support
+              </p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i
+                >Decoration design
+              </p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i>Per
+                day bill
+              </p>
+              <button class="btn fw-bold text-primary ms-4">choose plan</button>
+            </div>
+
+            <div class="col-lg-3 bg-primary text-white py-3 rounded-5">
+              <h1>$500</h1>
+              <h2>Wedding plus</h2>
+              <p>For most businesses event like book fair, craft fair.</p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i
+                >limited space access
+              </p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i
+                >Secuirty facility
+              </p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i>event
+                support
+              </p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i
+                >Decoration design
+              </p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i>Per
+                day bill
+              </p>
+              <button
+                class="btn fw-bold text-primary rounded-pill bg-white w-75 ms-4"
+              >
+                choose plan
+              </button>
+            </div>
+
+            <div class="col-lg-3 mt-5">
+              <h1>$500</h1>
+              <h2>Corporate event</h2>
+              <p>For most businesses event like book fair, craft fair.</p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i
+                >limited space access
+              </p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i
+                >Secuirty facility
+              </p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i>event
+                support
+              </p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i
+                >Decoration design
+              </p>
+              <p>
+                <i class="fa-solid fa-check bg-info px-1 rounded me-1"></i>Per
+                day bill
+              </p>
+              <button class="btn fw-bold text-primary ms-4">choose plan</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section>
+        <div class="container">
+          <h1 class="my-5 text-center">Happy Clients says</h1>
+          <div class="row my-5">
+            <div class="col-lg-4 text-center px-5 shadow p-3 mb-5 bg-body">
+              <h6>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </h6>
+              <img src="images/images/person 1.png" alt="" />
+              <h6>Regina Miles</h6>
+              <p>Banker</p>
+            </div>
+
+            <div class="col-lg-4 text-center shadow p-3 mb-5 bg-body gx-1">
+              <h6>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </h6>
+              <img src="images/images/person 2.png" alt="" />
+              <h6>Jone Drake</h6>
+              <p>Banker</p>
+            </div>
+
+            <div class="col-lg-4 text-center shadow p-3 mb-5 bg-body">
+              <h6>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </h6>
+              <img src="images/images/person 3.png" alt="" />
+              <h6>Cret Yater</h6>
+              <p>Banker</p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- another section -->
+
+      <section>
+        <div class="container">
+          <h1 class="my-5 text-center">Happy Clients says</h1>
+          <div class="d-flex">
+            <div
+              class="w-50 text-center me-5 shadow-lg p-3 mb-5 bg-body rounded"
+            >
+              <h6>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </h6>
+              <img src="images/images/person 1.png" alt="" />
+              <h6 class="fw-bold">Regina Miles</h6>
+              <p>Banker</p>
+            </div>
+
+            <div
+              class="w-50 text-center me-5 shadow-lg p-3 mb-5 bg-body rounded"
+            >
+              <h6>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </h6>
+              <img src="images/images/person 2.png" alt="" />
+              <h6 class="fw-bold">Jone Drake</h6>
+              <p>Banker</p>
+            </div>
+
+            <div class="w-50 text-center shadow-lg p-3 mb-5 bg-body rounded">
+              <h6>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </h6>
+              <img src="images/images/person 3.png" alt="" />
+              <h6 class="fw-bold">Cret Yater</h6>
+              <p>Banker</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
